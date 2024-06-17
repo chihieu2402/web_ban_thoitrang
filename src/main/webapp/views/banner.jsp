@@ -27,8 +27,8 @@
 						style="color: #ffffff;"></i> Hỗ Trợ
 					</a> <a href="" class="text-decoration-none text-light"> <i class="fa-solid fa-globe"
 						style="color: #ffffff;"></i> Tiếng Việt
-					</a> <a href="../views/login.jsp" class="text-decoration-none text-light"> <i class="fa-regular fa-user"
-						style="color: #ffffff;"></i> Customer
+					</a> <a href="/index/login" class="text-decoration-none text-light"> <i class="fa-regular fa-user"
+						style="color: #ffffff;"></i> ${cus}
 					</a>
 				</div>
 			</div>
@@ -53,7 +53,7 @@
 							</div>
 						</div>
 						<div class="col-3 d-flex justify-content-center">
-							<a href="../views/Giohang.jsp" class="d-flex align-items-center text-decoration-none">
+							<a href="/cart" class="d-flex align-items-center text-decoration-none">
 								<i class="fa-solid fa-cart-shopping fa-2xl"
 								style="color: #ffffff;"></i>
 							</a>

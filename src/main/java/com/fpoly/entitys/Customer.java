@@ -26,8 +26,8 @@ public class Customer implements Serializable {
     @Column(name = "Address", columnDefinition = "nvarchar(50)")
     private String address;
     
-    @Column(name = "Email")
-    private String email;
+    @Column(name = "id")
+    private String id;
     
     @Column(name = "Age")
     private Integer age;

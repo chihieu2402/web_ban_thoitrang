@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import com.fpoly.Dao.ProductDao;
+import com.fpoly.entitys.Account;
 import com.fpoly.entitys.Product;
 import com.fpoly.repositories.ProductRepository;
 import com.fpoly.service.ProductService;
@@ -48,7 +49,6 @@ public class homeController {
 		Page<Product> page = dao.Pagination(pageable);
 		model.addAttribute("page", page);
 		model.addAttribute("products", page.getContent());
-
 		List<Product> findtop6 = dao.findTop6ByPercentageDiscount();
 		model.addAttribute("findtop6", findtop6);
 
@@ -59,10 +59,14 @@ public class homeController {
 			BigDecimal roundedPrice = new BigDecimal(discountedPrice).setScale(3, RoundingMode.CEILING);
 			product.setPrice(roundedPrice.floatValue());
 		});
-
 		List<Product> newProducts = dao.findProductsCreatedToday();
 		model.addAttribute("newProducts", newProducts);
-
+		Account u = session.get("userSes");
+		if(u!=null) {
+			model.addAttribute("cus", u.getEmail());
+		} else {
+			model.addAttribute("cus", "Customer");
+		}
 		return "index";
 	}
 

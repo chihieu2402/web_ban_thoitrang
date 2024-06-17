@@ -10,5 +10,5 @@ public interface CustomerDao extends JpaRepository<Customer, String> {
 	
 	List<Customer> findByCustomerID(String customerID);
 	
-	List<Customer> findByEmail(String email);
+//	List<Customer> findByEmail(String email);
 }

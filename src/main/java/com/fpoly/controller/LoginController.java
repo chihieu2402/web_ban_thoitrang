@@ -28,35 +28,44 @@ public class LoginController {
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String showLogin(Model model) {
-		laccount = dao.findAll();
+		Account u = session.get("userSes");
+		System.out.println("user: "+u);
+		if (u!= null) {
+			if (u.isRole()) {
+				return "redirect:/admin/thongke";
+			} else {
+				return "redirect:/index/layout";
+			}
+		}
 		return "login";
 	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String checkLogin(@RequestParam("user") Optional<String> username,
 			@RequestParam("password") Optional<String> password, Model model) {
-		String email = username.orElse(null);
-		String pw = password.orElse(null);
-		if (email.isBlank() || pw.isBlank()) {
-			model.addAttribute("mes", "Email và password không được trống");
-		} else {
-			Account user = (Account) dao.findByEmail(email);// note
-			if (user == null) {
-				model.addAttribute("mes", "Tài khoản không tồn tại");
+			String email = username.orElse(null);
+			String pw = password.orElse(null);
+			if (email.isBlank() || pw.isBlank()) {
+				model.addAttribute("mes", "Email và password không được trống");
 			} else {
-				if (user.getPassword().equals(pw)) {
-					session.set("userSes", user);
-					model.addAttribute("mes", "Đăng nhập thành công!");
-					if (user.isRole()) {
-						return "redirect:/admin/thongke";
-					} else {
-						return "redirect:/index/layout";
-					}
+				Account user = (Account) dao.findByEmail(email);// note
+				if (user == null) {
+					model.addAttribute("mes", "Tài khoản không tồn tại");
 				} else {
-					model.addAttribute("mes", "Email hoặc mật khẩu không chính xác");
+					if (user.getPassword().equals(pw)) {
+						session.set("userSes", user);
+						model.addAttribute("mes", "Đăng nhập thành công!");
+						if (user.isRole()) {
+							return "redirect:/admin/thongke";
+						} else {
+							return "redirect:/index/layout";
+						}
+					} else {
+						model.addAttribute("mes", "Email hoặc mật khẩu không chính xác");
+					}
 				}
 			}
-		}
+		
 //		model.addAttribute("mes", laccount);
 //		if(user.isBlank()||pw.isBlank()) {
 //			model.addAttribute("mes", "Email và password không được trống");

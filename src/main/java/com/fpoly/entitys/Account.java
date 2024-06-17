@@ -2,12 +2,18 @@
 package com.fpoly.entitys;
 
 import java.io.Serializable;
+
+import org.hibernate.validator.constraints.UniqueElements;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
+import jakarta.persistence.UniqueConstraint;
 import lombok.Data;
 
 @Data
@@ -15,7 +21,11 @@ import lombok.Data;
 @Table(name = "Accounts")
 public class Account implements Serializable {
     @Id
-    @Column(name = "Email", columnDefinition = "varchar(50)")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private String id;
+    
+   
+    @Column(name="email",nullable = false)
     private String email;
 
     @Column(name = "Password", columnDefinition = "varchar(20)", nullable = false)
@@ -23,13 +33,9 @@ public class Account implements Serializable {
 
     @Column(name = "Role", columnDefinition = "bit")
     private boolean role;
-    
-    
-    @Column(name="id")
-    private String id;
 
     @OneToOne
-    @JoinColumn(name="Email")
+    @JoinColumn(name="id")
     Customer customer;
     
 }
