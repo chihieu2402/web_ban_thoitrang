@@ -1,0 +1,47 @@
+a {
+	color: inherit; /* Giữ nguyên màu văn bản mặc định */
+	text-decoration: none; /* Bỏ gạch chân */
+}
+
+a:hover {
+	color: inherit; /* Giữ nguyên màu văn bản khi hover */
+	text-decoration: none; /* Bỏ gạch chân khi hover */
+}
+
+.navbar-header {
+	background-color: #ee4d2d;
+	color: white;
+}
+
+.navbar-tt{
+    background-color: #ee4d2d; 
+}
+
+a {
+	padding: 4px;
+}
+
+.navbar-custom {
+	font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand img {
+	width: 20%; /* Giới hạn độ rộng của hình ảnh */
+}
+.icon-container {
+	height: 100%;
+}
+
+.form-control {
+	flex-grow: 1;
+}
+
+.input-group .btn-search {
+	margin-left: -1px;
+	/* To avoid a small gap between the input and button */
+}
+
+.navbar-brand .shopee-text {
+	font-weight: bold; /* Đặt chữ đậm */
+	font-size: 1.5rem; /* Đặt kích thước lớn hơn */
+}

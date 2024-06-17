@@ -1,0 +1,47 @@
+.navbar-banner a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-banner a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-header {
+    background-color: #ee4d2d;
+    color: white;
+}
+
+a {
+    padding: 4px;
+}
+
+.navbar-custom {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand img {
+    width: 20%;
+}
+
+.icon-container {
+    height: 100%;
+}
+
+.form-control {
+    flex-grow: 1;
+}
+
+.input-group .btn-search {
+    margin-left: -1px;
+}
+
+.navbar-brand .shopee-text {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.banner-design a {
+    color: white;
+}

@@ -1,0 +1,302 @@
+.flashSale {
+    width: 1300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+#clock {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #EE4D2D;
+}
+
+#clock div>span {
+    padding: 5px;
+    border-radius: 3px;
+    background: black;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+.hai-cham{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+.badge {
+    font-size: 1em;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.card-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.clocktxt {
+    font-size: 30px;
+    font-weight: bold;
+    color:white;
+}
+
+.card {
+    position: relative;
+}
+
+.overlay-box {
+    position: absolute;
+}
+
+.box1 {
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+}
+
+.box2 {
+    top: 0px;
+    right: 0px;
+    background-color: #FFFF00;
+    color: red;
+    font-size: 13px;
+}
+
+.date-deal {
+    font-size: 8px;
+    color: white;
+    background-color: #3CB371;
+    font-weight: bold;
+    align-items: center;
+}
+
+.shopbee-box {
+    background-color: #DC143C;
+    font-size: 9px;
+    color: #FFFF00;
+    font-weight: bold;
+    width: auto;
+    padding: 2px 5px;
+}
+
+.ShopBee-Mall {
+    width: 1300px;
+    height: 500px;
+}
+
+.shopbeetxt {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.shopbeetxt i {
+    color: #B22222;
+}
+
+#shopbeetxt {
+    gap: 20px;
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+}
+
+.box-txt-brand {
+    width: 200px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 30px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.product img {
+    border-radius: 10% 30%;
+}
+
+#txt-brand {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    margin-top: 10px;
+}
+
+.product {
+    text-align: center;
+}
+
+.product-content {
+    margin-top: 10px;
+    font-size: 20px;
+    color: red;
+}
+
+.product img {
+    width: 200px;
+    height: 150px;
+}
+
+/**/
+.recommend-today {
+    margin-top: 20px;
+    width: 1300px;
+    height: auto;
+}
+
+.recommend-today-txt {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.recommend-line {
+    height: 5px;
+    background-color: #B22222;
+}
+
+.product-name-today {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.product-content-today {
+    font-size: 10px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.btn-show {
+    width: 120px;
+    height: 35px;
+    text-align: left;
+    display: block;
+}
+
+.card-body {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.card {
+    margin-left: 0;
+    margin-right: 0;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #EE4D2D;
+}
+
+
+.price-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-price {
+    font-size: 18px;
+    color: #FF0000;
+}
+
+.icon {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.icon a i {
+    font-size: 18px;
+    color: black;
+}
+
+.icon a i:hover {
+    color: red;
+}
+#heart-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.heart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    line-height: 1;
+}
+
+#heart-icon i {
+    position: relative;
+    font-size: 24px;
+    color: gray;
+    transition: color 0.3s;
+}
+
+#heart-icon i.liked {
+    color: red;
+}
+/**/
+a {
+	color: inherit; 
+	text-decoration: none; 
+}
+
+a:hover {
+	color: inherit; 
+	text-decoration: none; 
+}
+
+.navbar-header {
+	background-color: #ee4d2d;
+	color: white;
+}
+
+
+
+a {
+	padding: 4px;
+}
+
+.navbar-custom {
+	font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand img {
+	width: 20%;
+}
+.icon-container {
+	height: 100%;
+}
+
+.form-control {
+	flex-grow: 1;
+}
+
+.input-group .btn-search {
+	margin-left: -1px;
+}
+
+.navbar-brand .shopee-text {
+	font-weight: bold;
+	font-size: 3rem;
+    color: white;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover; 
+}

@@ -1,0 +1,20 @@
+.zoom-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .fixed-zoomed-image {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: none;
+    border: 1px solid #ddd;
+    z-index: 1000;
+  }
+
+  /* Set the desired position for the zoomed image */
+  .zoom-position {
+    top: 0;
+    right: 10%;
+    bottom: 100%;
+  }
