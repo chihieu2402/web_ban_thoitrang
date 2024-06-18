@@ -86,22 +86,22 @@ public class AdminController {
 
 	@PostMapping("/user/create")
 	public String createUser(@ModelAttribute("id") Account account, Model model) {
-		if (!accountDao.existsById(account.getId())) {
-			accountDao.save(account);
-			return "redirect:/admin/users";
-		} else {
-			model.addAttribute("message", "Id này đã tồn tại !");
-		}
-
-		List<Account> users = accountDao.findAll();
-		model.addAttribute("users", users);
+//		if (!accountDao.existsById(account.getId())) {
+//			accountDao.save(account);
+//			return "redirect:/admin/users";
+//		} else {
+//			model.addAttribute("message", "Id này đã tồn tại !");
+//		}
+//
+//		List<Account> users = accountDao.findAll();
+//		model.addAttribute("users", users);
 
 		return "admin";
 	}
 
 	// edit
 	@RequestMapping("/user/edit/{id}")
-	public String editUser(@PathVariable("id") String id, Model model) {
+	public String editUser(@PathVariable("id") Long id, Model model) {
 		Account user = accountDao.findByIdd(id).get(0);
 		List<Account> users = accountDao.findAll();
 		model.addAttribute("users", users);
@@ -120,7 +120,7 @@ public class AdminController {
 
 	// Xóa người dùng
 	@GetMapping("/user/delete/{id}")
-	public String deleteUser(@PathVariable("id") String id) {
+	public String deleteUser(@PathVariable("id") Long id) {
 		accountDao.deleteById(id);
 		return "redirect:/admin/users";
 	}
