@@ -1,6 +1,6 @@
 package com.fpoly.utils;
 
-import com.fpoly.Dao.ProductDao;
+import com.fpoly.dao.ProductDao;
 import com.fpoly.entitys.Product;
 import com.fpoly.service.ProductService;
 

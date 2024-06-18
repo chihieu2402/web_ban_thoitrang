@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.fpoly.Dao.AccountDao;
+import com.fpoly.dao.AccountDao;
 import com.fpoly.entitys.Account;
 import com.fpoly.service.SessionService;
 
@@ -29,8 +29,8 @@ public class LoginController {
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String showLogin(Model model) {
 		Account u = session.get("userSes");
-		System.out.println("user: "+u);
 		if (u!= null) {
+			
 			if (u.isRole()) {
 				return "redirect:/admin/thongke";
 			} else {
@@ -49,6 +49,7 @@ public class LoginController {
 				model.addAttribute("mes", "Email và password không được trống");
 			} else {
 				Account user = (Account) dao.findByEmail(email);// note
+				System.out.println(user);
 				if (user == null) {
 					model.addAttribute("mes", "Tài khoản không tồn tại");
 				} else {

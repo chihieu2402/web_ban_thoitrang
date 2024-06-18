@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.fpoly.Dao.AccountDao;
+import com.fpoly.dao.AccountDao;
 import com.fpoly.entitys.Account;
 import com.fpoly.service.SessionService;
 

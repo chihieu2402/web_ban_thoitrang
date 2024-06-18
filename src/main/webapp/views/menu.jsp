@@ -85,7 +85,7 @@ a {
 				</a> <a href=""> <i class="fa-solid fa-globe"
 					style="color: #ffffff;"></i> Tiếng Việt
 				</a> <a href=""> <i class="fa-regular fa-user"
-					style="color: #ffffff;"></i> Customer
+					style="color: #ffffff;"></i> ${cus}
 				</a>
 			</div>
 		</div>

@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import com.fpoly.Dao.ProductDao;
+
+import com.fpoly.dao.ProductDao;
 import com.fpoly.entitys.Account;
 import com.fpoly.entitys.Product;
 import com.fpoly.repositories.ProductRepository;

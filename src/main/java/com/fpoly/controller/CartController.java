@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import com.fpoly.Dao.ProductDao;
+import com.fpoly.dao.ProductDao;
 import com.fpoly.entitys.Product;
 
 import com.fpoly.service.CartService;

@@ -1,4 +1,4 @@
-package com.fpoly.Dao;
+package com.fpoly.dao;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;

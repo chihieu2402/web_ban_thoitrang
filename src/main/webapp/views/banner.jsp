@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 	<!DOCTYPE html>
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 	<html>
 	<head>
 		<meta charset="UTF-8">
@@ -30,6 +31,9 @@
 					</a> <a href="/index/login" class="text-decoration-none text-light"> <i class="fa-regular fa-user"
 						style="color: #ffffff;"></i> ${cus}
 					</a>
+					<c:if test="${not empty userSes}">
+					<a href="/index/logout" class="text-decoration-none text-light"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log Out</a>
+					</c:if>
 				</div>
 			</div>
 			<div class="container-fluid navbar-wrapper m-2 p-2 mx-4">

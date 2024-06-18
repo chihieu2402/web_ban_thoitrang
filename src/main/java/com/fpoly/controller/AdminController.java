@@ -26,9 +26,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.fpoly.Dao.AccountDao;
-import com.fpoly.Dao.BillDao;
-import com.fpoly.Dao.ProductDao;
+import com.fpoly.dao.AccountDao;
+import com.fpoly.dao.BillDao;
+import com.fpoly.dao.ProductDao;
 import com.fpoly.entitys.Account;
 import com.fpoly.entitys.Bill;
 import com.fpoly.entitys.Product;
