@@ -26,13 +26,11 @@ public class Customer implements Serializable {
     @Column(name = "Address", columnDefinition = "nvarchar(50)")
     private String address;
     
-    @Column(name = "id")
-    private Long id;
-    
     @Column(name = "Age")
     private Integer age;
     
-    @OneToOne(mappedBy = "customer")
+    @OneToOne
+    @JoinColumn(name="account_id")
     private Account account;
     
     @OneToMany(mappedBy = "customer")

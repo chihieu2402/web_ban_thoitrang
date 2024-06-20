@@ -13,7 +13,6 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
-import jakarta.persistence.UniqueConstraint;
 import lombok.Data;
 
 @Data
@@ -34,8 +33,7 @@ public class Account implements Serializable {
     @Column(name = "Role", columnDefinition = "bit")
     private boolean role;
 
-    @OneToOne
-    @JoinColumn(name="id")
-    Customer customer;
+    @OneToOne(mappedBy="account")
+    private Customer customer;
     
 }
