@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.Query;
 import com.fpoly.entitys.Account;
 
 public interface AccountDao extends JpaRepository<Account, Long> {
-	@Query("SELECT a FROM Account a WHERE a.email LIKE ?1")
+	
 	Account findByEmail(String email);
 
 	@Query("SELECT o FROM Account o WHERE o.id = ?1")

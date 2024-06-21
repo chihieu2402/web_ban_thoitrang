@@ -38,12 +38,12 @@
 					</ul>
 				</div>
 				<div class="col-md-2">
-					<h5 class="text-uppercase">Về Shopee</h5>
+					<h5 class="text-uppercase">Về Shopbee</h5>
 					<ul class="list-unstyled">
-						<li><a href="#" class="text">Giới Thiệu Về Shopee Việt
+						<li><a href="#" class="text">Giới Thiệu Về Shopbee Việt
 								Nam</a></li>
 						<li><a href="#" class="text">Tuyển Dụng</a></li>
-						<li><a href="#" class="text">Điều Khoản Shopee</a></li>
+						<li><a href="#" class="text">Điều Khoản Shopbee</a></li>
 						<li><a href="#" class="text">Chính Sách Bảo Mật</a></li>
 						<li><a href="#" class="text">Chính Hãng</a></li>
 						<li><a href="#" class="text">Kênh Người Bán</a></li>
@@ -111,7 +111,7 @@
 					</ul>
 				</div>
 				<div class="col-md-2">
-					<h5 class="text-uppercase">Tải Ứng Dụng Shopee Ngay Thôi</h5>
+					<h5 class="text-uppercase">Tải Ứng Dụng Shopbee Ngay Thôi</h5>
 					<p class="list-unstyled">
 					<div class="row">
 						<div class="col-6">
@@ -132,7 +132,7 @@
 			</div>
 			<div class="row">
 				<div class="col text-center">
-					<p class="mt-3 mb-0">&copy; 2024 Shopee. All Rights Reserved.</p>
+					<p class="mt-3 mb-0">&copy; 2024 Shopbee. All Rights Reserved.</p>
 				</div>
 			</div>
 		</div>

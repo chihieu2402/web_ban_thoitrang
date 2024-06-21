@@ -96,7 +96,7 @@ a {
 						<div class="navbar-brand m-auto d-flex align-items-center" href="">
 							<img class="w-10 mr-2" alt="Shopee Logo"
 								src="${pageContext.request.contextPath}/images/icons8-shopee-100.png">
-							<span class="shopee-text">Shopee</span>
+							<span class="shopee-text">Shopbee</span>
 						</div>
 					</div>
 					<div class="col-6">

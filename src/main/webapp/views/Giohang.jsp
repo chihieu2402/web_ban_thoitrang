@@ -19,9 +19,9 @@
 	<nav class="navbar navbar-expand-lg navbar-light"
 		style="background-color: #f7fffe;">
 		<div class="container">
-			<a class="navbar-brand" href="#"><img style="max-height: 60px;"
+			<a class="navbar-brand" href="/index/layout"><img style="max-height: 60px;"
 				src="../image/logo1.webp" alt="Logo"></a>
-			<h2 class="mt-3" style="color: #FE5621;">Shoppe | Giỏ Hàng</h2>
+			<h2 class="mt-3" style="color: #FE5621;">Shopbee | Giỏ Hàng</h2>
 			<div class="ms-auto input-group mt-2" style="max-width: 500px;">
 				<input type="text" class="form-control" placeholder="Tìm Kiếm"
 					aria-label="Search" aria-describedby="basic-addon1"
@@ -89,7 +89,7 @@
 											value="${item.product.productId}"> <input
 											type="number" name="quantity" min="1"
 											onblur="this.form.submit()" class="text-center quantity"
-											min="1" value="${item.quantity}" style="width: 100px"
+											min="1" max="${item.product.quantity}" value="${item.quantity}" style="width: 100px"
 											id="soluong">
 									</form>
 								</div>

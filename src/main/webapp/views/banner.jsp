@@ -43,7 +43,7 @@
 							<div class="navbar-brand m-auto d-flex align-items-center" href="">
 								<img class="w-10 mr-2" alt="Shopee Logo"
 									src="../image/logo-body.jpg"> <span
-									class="shopee-text">Shopee</span>
+									class="shopee-text">Shopbee</span>
 							</div>
 						</div>
 						<div class="col-6">
