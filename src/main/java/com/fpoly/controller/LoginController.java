@@ -44,20 +44,16 @@ public class LoginController {
 	public String checkLogin(@RequestParam("user") Optional<String> username,
 			@RequestParam("password") Optional<String> password, Model model) {
 			String email = username.orElse(null);
-			System.out.println(email);
 			String pw = password.orElse(null);
 			if (email.isBlank() || pw.isBlank()) {
 				model.addAttribute("mes", "Email và password không được trống");
 			} else {
-				System.out.println(email);
-				Account user = (Account) dao.findAccountByEmail(email);// note
-				System.out.println(user);
+				Account user = (Account) dao.findByEmail(email);// note
 				if (user == null) {
 					model.addAttribute("mes", "Tài khoản không tồn tại");
 				} else {
 					if (user.getPassword().equals(pw)) {
 						session.set("userSes", user);
-//						model.addAttribute("mes", "Đăng nhập thành công!");
 						if (user.isRole()) {
 							return "redirect:/admin/thongke";
 						} else {
